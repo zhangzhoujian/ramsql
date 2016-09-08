@@ -196,6 +196,25 @@ func TestCreateNumberInNames(t *testing.T) {
 	parse(query, 1, t)
 }
 
+func TestArithmetic(t *testing.T) {
+	query := `SELECT 1 + 2 as calc`
+	parse(query, 1, t)
+
+	query = `SELECT 'yay !' as hello where 1+1 = 2`
+	parse(query, 1, t)
+}
+
+func TestTimeArithmetic(t *testing.T) {
+	query := `SELECT * FROM table WHERE now() - attr1 > attr2`
+	parse(query, 1, t)
+
+	query = `SELECT * FROM table
+						LEFT JOIN foo ON foo.id = table.foo_id
+						WHERE now() - last_beat > 30 * INTERVAL '1' SECOND
+						LIMIT 10000`
+	parse(query, 1, t)
+}
+
 func parse(query string, instructionNumber int, t *testing.T) []Instruction {
 	log.UseTestLogger(t)
 
