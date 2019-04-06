@@ -9,7 +9,7 @@ import (
 	"testing"
 
 	_ "github.com/lib/pq"
-	_ "github.com/proullon/ramsql/driver"
+	_ "github.com/zhangzhoujian/ramsql/driver"
 )
 
 func benchmarkInsert(b *testing.B, driver string, nbRows int) {

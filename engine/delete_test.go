@@ -4,9 +4,9 @@ import (
 	"database/sql"
 	"testing"
 
-	"github.com/proullon/ramsql/engine/log"
+	"github.com/zhangzhoujian/ramsql/engine/log"
 
-	_ "github.com/proullon/ramsql/driver"
+	_ "github.com/zhangzhoujian/ramsql/driver"
 )
 
 func TestTrunc(t *testing.T) {

@@ -1,6 +1,6 @@
 # RamSQL
 
-[![Build Status](https://travis-ci.org/proullon/ramsql.svg)](https://travis-ci.org/proullon/ramsql)
+[![Build Status](https://travis-ci.org/zhangzhoujian/ramsql.svg)](https://travis-ci.org/zhangzhoujian/ramsql)
 
 ## Disposable SQL engine
 
@@ -16,7 +16,7 @@ Bottom line : One DataSourceName per test and you have full test isolation in no
 ## Installation
 
 ```
-  go get github.com/proullon/ramsql
+  go get github.com/zhangzhoujian/ramsql
 ```
 
 ## Usage 
@@ -58,7 +58,7 @@ import (
 	"fmt"
 	"testing"
 
-	_ "github.com/proullon/ramsql/driver"
+	_ "github.com/zhangzhoujian/ramsql/driver"
 )
 
 
@@ -118,7 +118,7 @@ CREATE TABLE IF NOT EXISTS user_addresses (address_id INT, user_id INT);
 You may want to test its validity:
 
 ```console
-$ go install github.com/proullon/ramsql
+$ go install github.com/zhangzhoujian/ramsql
 $ ramsql < schema.sql
 ramsql> Query OK. 1 rows affected
 ramsql> Query OK. 1 rows affected

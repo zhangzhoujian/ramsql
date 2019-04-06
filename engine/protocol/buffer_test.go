@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/proullon/ramsql/engine/log"
+	"github.com/zhangzhoujian/ramsql/engine/log"
 )
 
 func TestBufferChannel(t *testing.T) {

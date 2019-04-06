@@ -3,7 +3,7 @@ package parser
 import (
 	"testing"
 
-	"github.com/proullon/ramsql/engine/log"
+	"github.com/zhangzhoujian/ramsql/engine/log"
 )
 
 func TestParserCreateTableSimple(t *testing.T) {

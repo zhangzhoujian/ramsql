@@ -6,9 +6,9 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/proullon/ramsql/engine/log"
-	"github.com/proullon/ramsql/engine/parser"
-	"github.com/proullon/ramsql/engine/protocol"
+	"github.com/zhangzhoujian/ramsql/engine/log"
+	"github.com/zhangzhoujian/ramsql/engine/parser"
+	"github.com/zhangzhoujian/ramsql/engine/protocol"
 )
 
 //    |-> order

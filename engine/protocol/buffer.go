@@ -3,7 +3,7 @@ package protocol
 import (
 	"container/list"
 
-	"github.com/proullon/ramsql/engine/log"
+	"github.com/zhangzhoujian/ramsql/engine/log"
 )
 
 // UnlimitedRowsChannel buffers incomming message from bufferThis channel and forward them to
